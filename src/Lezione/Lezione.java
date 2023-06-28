@@ -1,4 +1,4 @@
-package LezioneSettimana01Giorno03;
+package Lezione;
 
 public class Lezione {
 
@@ -29,7 +29,7 @@ public class Lezione {
 			break;
 		}
 		default:
-			System.out.println("Nessuno dei precedenti");
+			System.out.println();
 		}
 		
 	}
