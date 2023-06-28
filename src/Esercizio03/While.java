@@ -7,7 +7,7 @@ public class While {
 		Scanner input = new Scanner(System.in);
 
 		while (true) {
-			System.out.println("Inserisci una stringa:");
+			System.out.println("Inserisci una stringa. \nInserire ':q' per arrestare il programma");
 			String stringa = input.nextLine();
 
 			if (stringa.equals(":q")) {
