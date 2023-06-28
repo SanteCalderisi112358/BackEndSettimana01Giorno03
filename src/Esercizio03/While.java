@@ -13,7 +13,7 @@ public class While {
 			}
 			stampa(stringa);
 		}
-		System.out.println("Hai inserito ':q'. Programma terminato.");
+		System.out.println("Hai inserito ':q'. \nProgramma terminato. \nAdios!");
 		input.close();
 	}
 
