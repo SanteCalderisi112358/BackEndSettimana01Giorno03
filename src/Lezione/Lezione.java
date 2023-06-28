@@ -3,7 +3,7 @@ package Lezione;
 public class Lezione {
 
 	public static void main(String[] args) {
-		int x = 10, y = 30;
+		/*int x = 10, y = 30;
 		boolean test = true;
 		if (test) {
 			System.out.println("Test passato");
@@ -31,7 +31,19 @@ public class Lezione {
 		default:
 			System.out.println();
 		}
-		
+		*/
+
+		// WHILE
+
+		int x = 6, y = 3;
+		while (y <= x + 6) {
+			System.out.println(y);
+			y += 3;
+		}
+		do { // eseguo almeno una volta le istruzioni
+			System.out.println(x++);
+
+		} while (x < 10);
 	}
 
 	public static int testNumbers(int a, int b, int c) {
