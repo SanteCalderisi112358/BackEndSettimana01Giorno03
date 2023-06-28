@@ -9,12 +9,12 @@ public class For {
 		System.out.println("Inserisci un numero: ");
 		int numero = input.nextInt();
 
-		stampaRovescia(numero);
+		stampa(numero);
 
 		input.close();
 	}
 
-	public static void stampaRovescia(int numero) {
+	public static void stampa(int numero) {
 		System.out.printf("Il conto alla rovescia di %d è:\n", numero);
 		for (int i = numero; i >= 0; i--) {
 			System.out.println(i);
