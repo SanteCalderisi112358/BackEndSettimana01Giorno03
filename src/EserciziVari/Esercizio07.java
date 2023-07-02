@@ -17,7 +17,10 @@ public class Esercizio07 {
 		int[] arrayNum = new int[num];
 		arrayNum = riempiArray(arrayNum, input);
 		stampaArray(arrayNum);
-		sommaArray(arrayNum);
+		int somma = sommaArray(arrayNum);
+		double media = mediaArray(arrayNum, somma);
+		System.out.println("La somma degli elementi dell'array " + Arrays.toString(arrayNum) + " è:\n" + somma);
+		System.out.printf("La media è %.2f:\n ", media);
 		input.close();
 
 	}
@@ -35,12 +38,16 @@ public class Esercizio07 {
 
 	}
 
-	public static void sommaArray(int[] array) {
+	public static int sommaArray(int[] array) {
 		int sum = 0;
 		for (int i = 0; i < array.length; i++) {
 			sum += array[i];
 		}
-		System.out.println("La somma degli elementi dell'array " + Arrays.toString(array) + " è:\n" + sum);
+
+		return sum;
 	}
 
+	public static double mediaArray(int[] array, int somma) {
+		return (double) somma / array.length;
+	}
 }
