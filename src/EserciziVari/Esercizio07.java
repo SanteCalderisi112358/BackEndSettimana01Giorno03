@@ -19,8 +19,10 @@ public class Esercizio07 {
 		stampaArray(arrayNum);
 		int somma = sommaArray(arrayNum);
 		double media = mediaArray(arrayNum, somma);
-		System.out.println("La somma degli elementi dell'array " + Arrays.toString(arrayNum) + " è:\n" + somma);
-		System.out.printf("La media è %.2f:\n ", media);
+		int max = massimoArray(arrayNum);
+		System.out.println("La somma è: " + somma);
+		System.out.printf("La media è: %.2f\n", media);
+		System.out.println("Il massimo è: " + max);
 		input.close();
 
 	}
@@ -49,5 +51,15 @@ public class Esercizio07 {
 
 	public static double mediaArray(int[] array, int somma) {
 		return (double) somma / array.length;
+	}
+
+	public static int massimoArray(int[] array) {
+		int max = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] > max) {
+				max = array[i];
+			}
+		}
+		return max;
 	}
 }
